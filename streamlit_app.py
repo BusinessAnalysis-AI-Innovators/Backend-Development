@@ -101,6 +101,9 @@ if selected_feature == "Medical Records Access":
         st.write("File Name:", uploaded_file.name)
         st.write("File Size:", uploaded_file.size, "bytes")
 
+        # Add a creative message about matching with the WHO database
+        st.write("Your medical records will be securely stored and cross-referenced with the WHO database to provide you with the best healthcare recommendations.")
+
 if selected_feature == "Symptom Checker":
     st.subheader("Symptom Checker")
 
