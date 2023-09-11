@@ -10,10 +10,6 @@ st.markdown(
     body {
         background-color: #0074e4; /* Blue color */
     }
-    .divider {
-        border-left: 1px solid black; /* Black vertical line */
-        height: auto;
-    }
     </style>
     """,
     unsafe_allow_html=True,
@@ -25,7 +21,7 @@ st.title("Welcome to TeleHealth-Ease")
 # Add an introduction for patients
 st.write("Empowering You with Easy Access to Quality Healthcare Services")
 
-# Create a sidebar for buttons with a divider
+# Create a sidebar for buttons
 with st.sidebar:
     st.subheader("Select a Feature:")
     selected_feature = st.selectbox("", [
@@ -46,10 +42,6 @@ with st.sidebar:
         if login_button:
             st.success("Login Successful!")
 
-# Add an empty space with a black vertical line
-st.markdown('<div class="divider"></div>', unsafe_allow_html=True)
-
 # Display feature details or registration/login area
 if selected_feature:
     st.write(f"This is where the {selected_feature} details will appear.")
-
