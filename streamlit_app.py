@@ -1,7 +1,7 @@
 import streamlit as st
 
 # Set the title and page icon
-st.set_page_config(page_title="HealthTele-Ease", page_icon="🌡️")
+st.set_page_config(page_title="TeleHealth-Ease App", page_icon="🌡️")
 
 # Add custom CSS to change the background color to blue
 st.markdown(
@@ -16,7 +16,7 @@ st.markdown(
 )
 
 # Add a title
-st.title("Welcome to HealthTele-Ease")
+st.title("Welcome to TeleHealth-Ease")
 
 # Add buttons for different features
 if st.button("User Registration & Login"):
