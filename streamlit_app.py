@@ -29,19 +29,14 @@ st.write("Empowering You with Easy Access to Quality Healthcare Services")
 with st.sidebar:
     st.subheader("Select a Feature:")
     if st.button("User Registration & Login"):
-        st.write("User Registration & Login Feature Selected")
 
     if st.button("Profile Management"):
-        st.write("Profile Management Feature Selected")
 
     if st.button("Appointment Scheduling"):
-        st.write("Appointment Scheduling Feature Selected")
 
     if st.button("Medical Records Access"):
-        st.write("Medical Records Access Feature Selected")
 
     if st.button("Symptom Checker"):
-        st.write("Symptom Checker Feature Selected")
 
 # Add an empty space with a black vertical line
 st.markdown('<div class="divider"></div>', unsafe_allow_html=True)
