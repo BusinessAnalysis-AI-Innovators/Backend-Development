@@ -63,3 +63,28 @@ if selected_feature == "Profile Management":
         st.write("Age:", age)
         st.write("Gender:", gender)
         st.write("Additional Comments:", comments)
+
+
+if selected_feature == "Appointment Scheduling":
+    st.subheader("Book an Appointment with a Doctor")
+
+    # Add appointment scheduling form fields
+    doctor = st.text_input("Doctor's Name")
+    appointment_date = st.date_input("Appointment Date")
+    appointment_time = st.time_input("Appointment Time")
+    symptoms = st.text_area("Symptoms")
+    get_location = st.button("Get Location (GPS)")
+
+    # Create a button to submit the appointment booking
+    book_appointment_button = st.button("Book Appointment")
+
+    # Display appointment details
+    if book_appointment_button:
+        st.success("Appointment booked successfully!")
+        st.write("Doctor:", doctor)
+        st.write("Appointment Date:", appointment_date)
+        st.write("Appointment Time:", appointment_time)
+        st.write("Symptoms:", symptoms)
+        if get_location:
+            st.write("GPS Location: [Insert GPS coordinates here]")
+
