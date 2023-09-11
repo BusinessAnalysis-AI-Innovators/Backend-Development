@@ -42,6 +42,23 @@ with st.sidebar:
 
 # Add an empty space with a black vertical line
 st.markdown('<div class="divider"></div>', unsafe_allow_html=True)
-st.write("This is where the selected feature details will appear.")
 
+# Display feature details or registration/login area
+feature_selected = st.session_state.get("feature_selected", "")
 
+if feature_selected == "User Registration & Login":
+    st.write("This is where the User Registration / Login Area details will appear.")
+else:
+    st.write("This is where the selected feature details will appear.")
+
+# Update the selected feature based on the button clicked
+if st.button("User Registration & Login"):
+    st.session_state.feature_selected = "User Registration & Login"
+elif st.button("Profile Management"):
+    st.session_state.feature_selected = "Profile Management"
+elif st.button("Appointment Scheduling"):
+    st.session_state.feature_selected = "Appointment Scheduling"
+elif st.button("Medical Records Access"):
+    st.session_state.feature_selected = "Medical Records Access"
+elif st.button("Symptom Checker"):
+    st.session_state.feature_selected = "Symptom Checker"
