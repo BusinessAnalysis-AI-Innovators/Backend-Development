@@ -15,8 +15,11 @@ st.markdown(
     unsafe_allow_html=True,
 )
 
-# Add a title with a search icon
-st.title("Welcome to TeleHealth-Ease &#128269;")
+# Add a title
+st.title("Welcome to TeleHealth-Ease")
+
+# Add an introduction for patients
+st.write("Empowering You with Easy Access to Quality Healthcare Services")
 
 # Add buttons for different features
 if st.button("User Registration & Login"):
@@ -33,3 +36,4 @@ if st.button("Medical Records Access"):
 
 if st.button("Symptom Checker"):
     st.write("Symptom Checker Feature Selected")
+
