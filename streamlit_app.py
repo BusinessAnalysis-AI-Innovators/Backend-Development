@@ -1,42 +1,36 @@
 import streamlit as st
 
-# Set the background color to blue
+# Set the title and page icon
+st.set_page_config(page_title="HealthTele-Ease", page_icon="🌡️")
+
+# Add custom CSS to change the background color to blue
 st.markdown(
     """
     <style>
     body {
-        background-color: #3498db;
+        background-color: #0074e4; /* Blue color */
     }
     </style>
     """,
-    unsafe_allow_html=True
+    unsafe_allow_html=True,
 )
 
-# Add a heading
-st.header("HealthTele-Ease")
+# Add a title
+st.title("Welcome to HealthTele-Ease")
 
-# Button 1: User Registration & Login
+# Add buttons for different features
 if st.button("User Registration & Login"):
-    # Add your code for this button's functionality here
-    pass
-
-# Button 2: Profile Management
+    st.write("User Registration & Login Feature Selected")
+    
 if st.button("Profile Management"):
-    # Add your code for this button's functionality here
-    pass
+    st.write("Profile Management Feature Selected")
 
-# Button 3: Appointment Scheduling
 if st.button("Appointment Scheduling"):
-    # Add your code for this button's functionality here
-    pass
+    st.write("Appointment Scheduling Feature Selected")
 
-# Button 4: Medical Records Access
 if st.button("Medical Records Access"):
-    # Add your code for this button's functionality here
-    pass
+    st.write("Medical Records Access Feature Selected")
 
-# Button 5: Symptom Checker
 if st.button("Symptom Checker"):
-    # Add your code for this button's functionality here
-    pass
+    st.write("Symptom Checker Feature Selected")
 
