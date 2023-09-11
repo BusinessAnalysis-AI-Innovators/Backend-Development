@@ -29,16 +29,19 @@ st.write("Empowering You with Easy Access to Quality Healthcare Services")
 with st.sidebar:
     st.subheader("Select a Feature:")
     if st.button("User Registration & Login"):
-
-    if st.button("Profile Management"):
-
-    if st.button("Appointment Scheduling"):
-
-    if st.button("Medical Records Access"):
-
-    if st.button("Symptom Checker"):
+        st.write("User Registration & Login Feature Selected")
+        st.subheader("User Registration / Login Area:")
+        username = st.text_input("Username", "")
+        password = st.text_input("Password", "", type="password")
+        registration_button = st.button("Register")
+        login_button = st.button("Login")
+        if registration_button:
+            st.success("Registration Successful!")
+        if login_button:
+            st.success("Login Successful!")
 
 # Add an empty space with a black vertical line
 st.markdown('<div class="divider"></div>', unsafe_allow_html=True)
 st.write("This is where the selected feature details will appear.")
+
 
