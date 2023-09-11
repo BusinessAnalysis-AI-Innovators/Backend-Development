@@ -24,16 +24,21 @@ st.write("Empowering You with Easy Access to Quality Healthcare Services")
 # Add buttons for different features
 if st.button("User Registration & Login"):
     st.write("User Registration & Login Feature Selected")
+    st.markdown("<hr>", unsafe_allow_html=True)  # Horizontal line
     
 if st.button("Profile Management"):
     st.write("Profile Management Feature Selected")
+    st.markdown("<hr>", unsafe_allow_html=True)  # Horizontal line
 
 if st.button("Appointment Scheduling"):
     st.write("Appointment Scheduling Feature Selected")
+    st.markdown("<hr>", unsafe_allow_html=True)  # Horizontal line
 
 if st.button("Medical Records Access"):
     st.write("Medical Records Access Feature Selected")
+    st.markdown("<hr>", unsafe_allow_html=True)  # Horizontal line
 
 if st.button("Symptom Checker"):
     st.write("Symptom Checker Feature Selected")
+    st.markdown("<hr>", unsafe_allow_html=True)  # Horizontal line
 
