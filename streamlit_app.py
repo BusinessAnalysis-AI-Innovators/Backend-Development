@@ -37,6 +37,9 @@ if selected_feature == "User Registration & Login":
     password = st.text_input("Password", "", type="password")
     registration_button = st.button("Register")
     login_button = st.button("Login")
+    
+    # Center the buttons
+    st.write("", "", text_align="center")
     if registration_button:
         st.success("Registration Successful!")
     if login_button:
@@ -45,3 +48,4 @@ if selected_feature == "User Registration & Login":
 # Add an empty space
 if selected_feature:
     st.write(f"This is where the {selected_feature} details will appear.")
+
