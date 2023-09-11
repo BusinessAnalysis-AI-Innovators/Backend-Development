@@ -88,3 +88,15 @@ if selected_feature == "Appointment Scheduling":
         if get_location:
             st.write("GPS Location: [Insert GPS coordinates here]")
 
+if selected_feature == "Medical Records Access":
+    st.subheader("Access Your Medical Records")
+
+    # Add a file uploader for medical records
+    st.write("Upload your medical records file:")
+    uploaded_file = st.file_uploader("Choose a file...", type=["pdf", "jpg", "png"])
+
+    # Display the uploaded file
+    if uploaded_file is not None:
+        st.success("File uploaded successfully!")
+        st.write("File Name:", uploaded_file.name)
+        st.write("File Size:", uploaded_file.size, "bytes")
