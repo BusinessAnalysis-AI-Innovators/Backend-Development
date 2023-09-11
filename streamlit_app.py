@@ -93,10 +93,8 @@ if selected_feature == "Medical Records Access":
 
     # Add a file uploader for medical records
     st.write("Upload your medical records file:")
+    st.write("Your medical records will be securely stored and cross-referenced with the WHO database to provide you with the best healthcare recommendations.")
     uploaded_file = st.file_uploader("Choose a file...", type=["pdf", "jpg", "png"])
-
-# Add a creative message about matching with the WHO database
-        st.write("Your medical records will be securely stored and cross-referenced with the WHO database to provide you with the best healthcare recommendations.")
     
     # Display the uploaded file
     if uploaded_file is not None:
