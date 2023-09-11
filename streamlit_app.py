@@ -38,9 +38,28 @@ if selected_feature == "User Registration & Login":
     registration_button = st.button("Register")
     login_button = st.button("Login")
     
-    # Center the buttons
-    st.write("", "", text_align="center")
-    if registration_button:
-        st.success("Registration Successful!")
-    if login_button:
-        st.success("Login Successful!")
+if selected_feature == "Profile Management":
+    st.subheader("Manage Your Health Information")
+
+    # Create form to manage health information
+    with st.form("Health Information"):
+        # Add form fields for health information
+        first_name = st.text_input("First Name")
+        last_name = st.text_input("Last Name")
+        age = st.number_input("Age", min_value=0)
+        gender = st.radio("Gender", ("Male", "Female", "Other"))
+
+        # Add a textarea for additional comments
+        comments = st.text_area("Additional Comments")
+
+        # Create a button to submit the form
+        submit_button = st.form_submit_button("Save Information")
+
+    # Display the submitted information
+    if submit_button:
+        st.success("Health information saved successfully!")
+        st.write("First Name:", first_name)
+        st.write("Last Name:", last_name)
+        st.write("Age:", age)
+        st.write("Gender:", gender)
+        st.write("Additional Comments:", comments)
