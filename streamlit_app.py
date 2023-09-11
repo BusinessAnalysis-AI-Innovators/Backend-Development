@@ -44,8 +44,3 @@ if selected_feature == "User Registration & Login":
         st.success("Registration Successful!")
     if login_button:
         st.success("Login Successful!")
-
-# Add an empty space
-if selected_feature:
-    st.write(f"This is where the {selected_feature} details will appear.")
-
