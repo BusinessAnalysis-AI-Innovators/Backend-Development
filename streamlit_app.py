@@ -100,3 +100,24 @@ if selected_feature == "Medical Records Access":
         st.success("File uploaded successfully!")
         st.write("File Name:", uploaded_file.name)
         st.write("File Size:", uploaded_file.size, "bytes")
+
+if selected_feature == "Symptom Checker":
+    st.subheader("Symptom Checker")
+
+    # Create a form for symptom checking
+    with st.form("Symptom Checker"):
+        st.write("Please select the symptoms you are experiencing:")
+        symptom_fever = st.checkbox("Fever")
+        symptom_cough = st.checkbox("Cough")
+        symptom_breathing_difficulty = st.checkbox("Difficulty Breathing")
+        symptom_headache = st.checkbox("Headache")
+        symptom_fatigue = st.checkbox("Fatigue")
+        symptom_loss_of_taste_or_smell = st.checkbox("Loss of Taste or Smell")
+        
+        # Create a button to check symptoms
+        check_symptoms_button = st.form_submit_button("Check Symptoms")
+
+    # Display symptom checking results
+    if check_symptoms_button:
+        st.subheader("Symptom Checker Results")
+        st.write("Based on your selected symptoms, it is recommended to consult a healthcare professional.")
